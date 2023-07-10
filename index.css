@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family= Arvo :wght@700 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+body{
+   
+    width: 100vw;
+    background: linear-gradient(120deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(148, 3, 161)) no-repeat;
+}
+h1{
+    color: white;
+    font-size: 5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    float: left;
+}
+.github{
+    background-color: black;
+    border: none;
+}
+.github:hover{
+    background-color: rgb(39, 32, 78);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.linkedin{
+    background-color: #0460D9;
+    border: none;
+}
+.linkedin:hover{
+    background-color: white;
+    border: 2px solid #0460D9;
+    transition: 0.5s;
+    color: #0460D9;
+}
+.card-title{
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.card-one, .card-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    margin: 1.5rem;
+}
+@media(max-width:912px){
+    
+    .card-one, .card-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:400px){
+    *{
+        font-size: 0.8rem;
+    }
+    .card-title{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:300px){
+    h1{
+        font-size: 3rem;
+    }
+    .card-one, .card-two{
+        padding: 1rem;
+    }
+}
